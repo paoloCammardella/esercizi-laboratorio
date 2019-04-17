@@ -1,0 +1,33 @@
+/home/paolo/C/es02-04-2019/esn1/sommaMatrici.c: In function ‘main’:
+/home/paolo/C/es02-04-2019/esn1/sommaMatrici.c:12:37: error: expected ‘;’ before ‘int’
+   printf("\nStampa della matrice a")
+                                     ^
+                                     ;
+/home/paolo/C/es02-04-2019/esn1/sommaMatrici.c:14:3:
+   int **a=(int**)malloc(sizeof(int*)*n);
+   ~~~                                
+/home/paolo/C/es02-04-2019/esn1/sommaMatrici.c:16:7: error: ‘a’ undeclared (first use in this function)
+       a[i]=(int *)malloc(sizeof(int)*n);
+       ^
+/home/paolo/C/es02-04-2019/esn1/sommaMatrici.c:16:7: note: each undeclared identifier is reported only once for each function it appears in
+/home/paolo/C/es02-04-2019/esn1/sommaMatrici.c:32:15: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int **’ [-Wformat=]
+       scanf("%d", &b[j]);
+              ~^   ~~~~~
+/home/paolo/C/es02-04-2019/esn1/sommaMatrici.c:37:19: warning: passing argument 2 of ‘sommaMatrici’ makes integer from pointer without a cast [-Wint-conversion]
+   sommaMatrici(a, b, n);
+                   ^
+/home/paolo/C/es02-04-2019/esn1/sommaMatrici.c:4:7: note: expected ‘int’ but argument is of type ‘int **’
+ int** sommaMatrici(int , int, int);
+       ^~~~~~~~~~~~
+/home/paolo/C/es02-04-2019/esn1/sommaMatrici.c: In function ‘sommaMatrici’:
+/home/paolo/C/es02-04-2019/esn1/sommaMatrici.c:54:7: warning: type of ‘a’ defaults to ‘int’ [-Wimplicit-int]
+ int** sommaMatrici(a, b, n){
+       ^~~~~~~~~~~~
+/home/paolo/C/es02-04-2019/esn1/sommaMatrici.c:54:7: warning: type of ‘b’ defaults to ‘int’ [-Wimplicit-int]
+/home/paolo/C/es02-04-2019/esn1/sommaMatrici.c:54:7: warning: type of ‘n’ defaults to ‘int’ [-Wimplicit-int]
+/home/paolo/C/es02-04-2019/esn1/sommaMatrici.c:61:15: error: subscripted value is neither array nor pointer nor vector
+       c[j] = b[j] + a[j];
+               ^
+/home/paolo/C/es02-04-2019/esn1/sommaMatrici.c:61:22: error: subscripted value is neither array nor pointer nor vector
+       c[j] = b[j] + a[j];
+                      ^
