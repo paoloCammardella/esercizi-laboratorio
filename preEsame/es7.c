@@ -34,3 +34,40 @@ nodo *creaLista(){
   }
   return head;
 }
+nt primo(int num){
+int i, primo;
+
+for(i=2;i<num;i++)
+if(num%i == 0)
+primo == 0;
+primo == 1;
+
+return primo;
+}
+
+nodo *numeriPrimi(){
+  nodo *prec;
+
+  primo(L -> info);
+  prec = L;
+  L = L -> next;
+  while (L -> next != NULL){
+    primo(L -> info);
+    if(primo == 0)
+    L = L-> next;
+    else{
+      prec = L;
+      
+    }
+
+  }
+}
+
+
+
+
+
+
+
+
+
